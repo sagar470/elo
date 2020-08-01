@@ -32,5 +32,7 @@ use Illuminate\Support\Facades\Route;
         ]);
 
 });
+    Route::get('/articles', 'ArticlesController@index');
+    Route::get('/articles/{articles}','ArticlesController@show');
 
 
