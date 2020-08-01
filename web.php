@@ -23,8 +23,13 @@ use Illuminate\Support\Facades\Route;
 
     Route::get('/about', function() {
 
+        $articles= App\Article::all();
 
-        return view('about');
+
+
+        return view('about',[
+            'articles'=>$articles
+        ]);
 
 });
 
